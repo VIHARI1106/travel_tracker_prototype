@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Diary App Showcase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* --- Page Styles --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-color: #f9fafb;
+            color: #111827;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            font-size: 48px;
+            color: #4630eb;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 18px;
+            color: #6B7280;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #1f2937;
+        }
+
+        /* --- Phone Mockup Styles --- */
+        .screens-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        
+        .phone-mockup {
+            width: 280px;
+            height: 580px;
+            background-color: #fff;
+            border: 8px solid #111;
+            border-radius: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            padding: 15px;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .phone-mockup-header {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        
+        .phone-mockup-content {
+            padding-top: 10px;
+            flex-grow: 1;
+        }
+
+        .map-placeholder {
+            background-color: #d1e8ff;
+            height: 60%;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #6B7280;
+            font-size: 24px;
+        }
+
+        .card {
+            background-color: #f9fafb;
+            border: 1px solid #E5E7EB;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+        
+        .card-list .card {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .card h4 { margin: 0 0 5px 0; }
+        .card p { margin: 0; color: #6B7280; }
+
+        .chart-placeholder {
+            height: 120px;
+            background-color: #e2e8f0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #6B7280;
+        }
+
+        /* Home Page Icon Grid */
+        .home-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding-top: 20px;
+        }
+        .home-icon {
+            background-color: #f0f2f5;
+            border-radius: 12px;
+            padding: 20px 10px;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 500;
+            color: #333;
+        }
+        .home-icon i {
+            font-size: 28px;
+            color: #4630eb;
+            margin-bottom: 10px;
+        }
+
+        /* --- Features Section --- */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .feature-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            border: 1px solid #E5E7EB;
+        }
+
+        .feature-card .icon {
+            font-size: 32px;
+            color: #4630eb;
+            margin-bottom: 15px;
+        }
+
+        .feature-card h3 {
+            font-size: 20px;
+            margin: 0 0 10px 0;
+        }
+
+        .feature-card p {
+            font-size: 15px;
+            color: #6B7280;
+            margin: 0;
+            line-height: 1.5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><i class="fa-solid fa-route"></i> Travel Diary App</h1>
+            <p>This is a visual showcase of our app's pages and core functionalities. This is a static prototype for demonstration purposes.</p>
+        </header>
+
+        <section>
+            <h2>App Pages at a Glance</h2>
+            <div class="screens-container">
+
+                <div class="phone-mockup">
+                    <div class="phone-mockup-header">Home</div>
+                    <div class="phone-mockup-content">
+                        <div class="card" style="text-align: center;">
+                            <h4>Welcome, User!</h4>
+                            <p>Your latest trip was a 2.5km walk.</p>
+                        </div>
+                        <div class="home-grid">
+                            <div class="home-icon">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <div>Tracker</div>
+                            </div>
+                            <div class="home-icon">
+                                <i class="fa-solid fa-history"></i>
+                                <div>History</div>
+                            </div>
+                            <div class="home-icon">
+                                <i class="fa-solid fa-chart-pie"></i>
+                                <div>Dashboard</div>
+                            </div>
+                            <div class="home-icon">
+                                <i class="fa-solid fa-route"></i>
+                                <div>Trip Details</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-mockup">
+                    <div class="phone-mockup-header">Tracker</div>
+                    <div class="phone-mockup-content">
+                        <div class="map-placeholder"><i class="fa-solid fa-map-location-dot"></i></div>
+                        <div class="card">
+                            <h4><i class="fa-solid fa-satellite-dish" style="color: #2ecc71;"></i> Tracking Active</h4>
+                            <p>Automatically detecting your trip in Hyderabad.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="phone-mockup">
+                    <div class="phone-mockup-header">History</div>
+                    <div class="phone-mockup-content card-list">
+                        <div class="card"><h4>🚗 Car Trip - 15.2 km</h4><p>Sep 22, 2025</p></div>
+                        <div class="card"><h4>🚶 Walk - 2.5 km</h4><p>Sep 21, 2025</p></div>
+                        <div class="card"><h4>🚲 Cycle - 8.1 km</h4><p>Sep 20, 2025</p></div>
+                        <div class="card"><h4>🚌 Bus Trip - 22.0 km</h4><p>Sep 19, 2025</p></div>
+                    </div>
+                </div>
+
+                <div class="phone-mockup">
+                    <div class="phone-mockup-header">Dashboard</div>
+                    <div class="phone-mockup-content">
+                        <div class="card"><h4>Total Distance</h4><p>128.7 km</p></div>
+                        <div class="card"><h4><i class="fa-solid fa-leaf" style="color:#2ecc71"></i> CO₂ Saved</h4><p>5.42 kg</p></div>
+                        <div class="chart-placeholder"><i class="fa-solid fa-chart-bar"></i></div>
+                        <p style="text-align:center; font-size:12px; margin-top:5px; color:#6B7280">Mode Breakdown</p>
+                    </div>
+                </div>
+
+                <div class="phone-mockup">
+                    <div class="phone-mockup-header">Trip Details</div>
+                    <div class="phone-mockup-content">
+                        <div class="map-placeholder" style="height: 40%"><i class="fa-solid fa-route"></i></div>
+                        <div class="card">
+                           <h4>🚗 Car Trip Details</h4>
+                           <p>Distance: 15.2 km</p>
+                           <p>Duration: 35 min</p>
+                           <p>Avg Speed: 26.1 km/h</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section>
+            <h2>Core Functionalities</h2>
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-robot"></i></div>
+                    <h3>Automatic Tracking</h3>
+                    <p>Trips are logged automatically using phone sensors. No manual start/stop needed.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-person-walking"></i> <i class="fa-solid fa-car"></i> <i class="fa-solid fa-bus"></i></div>
+                    <h3>Smart Mode Detection</h3>
+                    <p>Intelligently detects if you are walking, cycling, in a car, bus, or metro.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-wifi-slash"></i></div>
+                    <h3>Offline-First Storage</h3>
+                    <p>Works perfectly without an internet connection. Your trips are stored locally and sync later.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-file-pdf"></i> <i class="fa-solid fa-file-csv"></i></div>
+                    <h3>Export & Share</h3>
+                    <p>Export your trip history as PDF or CSV for insurance, expense claims, or personal records.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-leaf"></i></div>
+                    <h3>Carbon Footprint</h3>
+                    <p>Calculates your carbon savings for eco-friendly trips like walking and cycling.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Privacy-First</h3>
+                    <p>Your travel data is stored on your device by default. You control what you share.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-trophy"></i></div>
+                    <h3>Gamification</h3>
+                    <p>Earn badges and rewards for achieving milestones and choosing eco-friendly travel.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                    <h3>Cloud Sync</h3>
+                    <p>Optionally sync your data to the cloud to back up and access your history anywhere.</p>
+                </div>
+
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
